@@ -23,4 +23,11 @@ public class StudentService {
     public void save(Student student){
         studentRepository.save(student);
     }
+
+
+    @Transactional
+    public void saveOneMore(Student student){
+        studentRepository.save(student);
+    }
+
 }
